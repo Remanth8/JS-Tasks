@@ -1,0 +1,734 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Patterns</title>
+</head>
+
+<body>
+
+<script>
+
+// =====================================================
+// 1. BASIC NESTED LOOP PATTERNS
+// =====================================================
+
+document.write("<h2>1. Basic Nested Loop Patterns</h2>");
+
+// 12345
+// 12345
+// 12345
+
+for(let j = 1; j <= 3; j++){
+    for(let i = 1; i <= 5; i++){
+        document.write(i);
+    }
+    document.write("<br>");
+}
+
+document.write("<br>");
+
+
+// 54321
+// 54321
+// 54321
+// 54321
+
+for(let j = 1; j <= 4; j++){
+    for(let i = 5; i >= 1; i--){
+        document.write(i);
+    }
+    document.write("<br>");
+}
+
+document.write("<br>");
+
+
+// 11111
+// 22222
+// 33333
+// 44444
+// 55555
+
+for(let j = 1; j <= 5; j++){
+    for(let i = 1; i <= 5; i++){
+        document.write(j);
+    }
+    document.write("<br>");
+}
+
+document.write("<br>");
+
+
+// 55555
+// 44444
+// 33333
+// 22222
+// 11111
+
+for(let j = 5; j >= 1; j--){
+    for(let i = 5; i >= 1; i--){
+        document.write(j);
+    }
+    document.write("<br>");
+}
+
+document.write("<br>");
+
+
+// =====================================================
+// 2. 0 AND 1 PATTERNS
+// =====================================================
+
+document.write("<h2>2. 0 and 1 Patterns</h2>");
+
+// 10101
+// 10101
+// 10101
+// 10101
+// 10101
+
+for(let j = 1; j <= 5; j++){
+    for(let i = 1; i <= 5; i++){
+        document.write(i % 2);
+    }
+    document.write("<br>");
+}
+
+document.write("<br>");
+
+
+// 11111
+// 00000
+// 11111
+// 00000
+// 11111
+
+for(let j = 1; j <= 5; j++){
+    for(let i = 1; i <= 5; i++){
+        document.write(j % 2);
+    }
+    document.write("<br>");
+}
+
+document.write("<br>");
+
+
+// =====================================================
+// 3. LEFT ALIGN NUMBER PATTERNS
+// =====================================================
+
+document.write("<h2>3. Left Align Number Patterns</h2>");
+
+
+// 1
+// 12
+// 123
+// 1234
+// 12345
+
+for(let j = 1; j <= 5; j++){
+    for(let i = 1; i <= j; i++){
+        document.write(i);
+    }
+    document.write("<br>");
+}
+
+document.write("<br>");
+
+
+// 1
+// 21
+// 321
+// 4321
+// 54321
+
+for(let j = 1; j <= 5; j++){
+    for(let i = j; i >= 1; i--){
+        document.write(i);
+    }
+    document.write("<br>");
+}
+
+document.write("<br>");
+
+
+// 5
+// 54
+// 543
+// 5432
+// 54321
+
+for(let j = 5; j >= 1; j--){
+    for(let i = 5; i >= j; i--){
+        document.write(i);
+    }
+    document.write("<br>");
+}
+
+document.write("<br>");
+
+
+// 5
+// 45
+// 345
+// 2345
+// 12345
+
+for(let j = 5; j >= 1; j--){
+    for(let i = j; i <= 5; i++){
+        document.write(i);
+    }
+    document.write("<br>");
+}
+
+document.write("<br>");
+
+
+// 54321
+// 5432
+// 543
+// 54
+// 5
+
+for(let j = 1; j <= 5; j++){
+    for(let i = 5; i >= j; i--){
+        document.write(i);
+    }
+    document.write("<br>");
+}
+
+document.write("<br>");
+
+
+// 12345
+// 1234
+// 123
+// 12
+// 1
+
+for(let j = 5; j >= 1; j--){
+    for(let i = 1; i <= j; i++){
+        document.write(i);
+    }
+    document.write("<br>");
+}
+
+document.write("<br>");
+
+
+// 12345
+// 2345
+// 345
+// 45
+// 5
+
+for(let j = 1; j <= 5; j++){
+    for(let i = j; i <= 5; i++){
+        document.write(i);
+    }
+    document.write("<br>");
+}
+
+document.write("<br>");
+
+
+// 54321
+// 4321
+// 321
+// 21
+// 1
+
+for(let j = 5; j >= 1; j--){
+    for(let i = j; i >= 1; i--){
+        document.write(i);
+    }
+    document.write("<br>");
+}
+
+document.write("<br>");
+
+
+// =====================================================
+// 4. SAME NUMBER PATTERNS
+// =====================================================
+
+document.write("<h2>4. Same Number Patterns</h2>");
+
+
+// 1
+// 22
+// 333
+// 4444
+// 55555
+
+for(let j = 1; j <= 5; j++){
+    for(let i = 1; i <= j; i++){
+        document.write(j);
+    }
+    document.write("<br>");
+}
+
+document.write("<br>");
+
+
+// 5
+// 44
+// 333
+// 2222
+// 11111
+
+for(let j = 5; j >= 1; j--){
+    for(let i = j; i <= 5; i++){
+        document.write(j);
+    }
+    document.write("<br>");
+}
+
+document.write("<br>");
+
+
+// =====================================================
+// 5. RIGHT ALIGN NUMBER PATTERNS
+// =====================================================
+
+document.write("<h2>5. Right Align Number Patterns</h2>");
+
+
+//     1
+//    12
+//   123
+//  1234
+// 12345
+
+for(let j = 1; j <= 5; j++){
+
+    for(let s = 5; s > j; s--){
+        document.write("&nbsp;&nbsp;");
+    }
+
+    for(let i = 1; i <= j; i++){
+        document.write(i);
+    }
+
+    document.write("<br>");
+}
+
+document.write("<br>");
+
+
+//     1
+//    21
+//   321
+//  4321
+// 54321
+
+for(let j = 1; j <= 5; j++){
+
+    for(let s = 5; s > j; s--){
+        document.write("&nbsp;&nbsp;");
+    }
+
+    for(let i = j; i >= 1; i--){
+        document.write(i);
+    }
+
+    document.write("<br>");
+}
+
+document.write("<br>");
+
+
+// 54321
+//  4321
+//   321
+//    21
+//     1
+
+for(let j = 5; j >= 1; j--){
+
+    for(let s = 1; s < j; s++){
+        document.write("&nbsp;&nbsp;");
+    }
+
+    for(let i = j; i <= 5; i++){
+        document.write(i);
+    }
+
+    document.write("<br>");
+}
+
+document.write("<br>");
+
+
+// 54321
+//  5432
+//   543
+//    54
+//     5
+
+for(let j = 5; j >= 1; j--){
+
+    for(let s = 5; s > j; s--){
+        document.write("&nbsp;&nbsp;");
+    }
+
+    for(let i = 1; i <= j; i++){
+        document.write(6 - i);
+    }
+
+    document.write("<br>");
+}
+
+document.write("<br>");
+
+
+// =====================================================
+// 6. PYRAMID NUMBER PATTERNS
+// =====================================================
+
+document.write("<h2>6. Pyramid Number Patterns</h2>");
+
+
+//     1
+//    222
+//   33333
+//  4444444
+// 555555555
+
+for(let i = 1; i <= 5; i++){
+
+    for(let j = 5; j >= i; j--){
+        document.write("&nbsp;&nbsp;");
+    }
+
+    for(let k = 1; k <= i; k++){
+        document.write(i);
+    }
+
+    for(let l = 2; l <= i; l++){
+        document.write(i);
+    }
+
+    document.write("<br>");
+}
+
+document.write("<br>");
+
+
+// 555555555
+//  4444444
+//   33333
+//    222
+//     1
+
+for(let m = 5; m >= 1; m--){
+
+    for(let n = 5; n >= m; n--){
+        document.write("&nbsp;&nbsp;");
+    }
+
+    for(let o = 1; o <= m; o++){
+        document.write(m);
+    }
+
+    for(let p = 1; p <= m - 1; p++){
+        document.write(m);
+    }
+
+    document.write("<br>");
+}
+
+document.write("<br>");
+
+
+//     5
+//    444
+//   33333
+//  2222222
+// 111111111
+
+for(let a = 5; a >= 1; a--){
+
+    for(let b = 1; b <= a; b++){
+        document.write("&nbsp;&nbsp;");
+    }
+
+    for(let c = 5; c >= a; c--){
+        document.write(a);
+    }
+
+    for(let d = 4; d >= a; d--){
+        document.write(a);
+    }
+
+    document.write("<br>");
+}
+
+document.write("<br>");
+
+
+//   111111111
+//    2222222
+//     33333
+//      444
+//       5
+
+for(let w = 1; w <= 5; w++){
+
+    for(let x = 1; x <= w; x++){
+        document.write("&nbsp;&nbsp;");
+    }
+
+    for(let y = 5; y >= w; y--){
+        document.write(w);
+    }
+
+    for(let z = 4; z >= w; z--){
+        document.write(w);
+    }
+
+    document.write("<br>");
+}
+
+document.write("<br>");
+
+
+// =====================================================
+// 7. NUMBER PYRAMIDS
+// =====================================================
+
+document.write("<h2>7. Number Pyramid Patterns</h2>");
+
+
+//     1
+//    212
+//   32123
+//  4321234
+// 543212345
+
+for(let e = 1; e <= 5; e++){
+
+    for(let f = 5; f >= e; f--){
+        document.write("&nbsp;&nbsp;");
+    }
+
+    for(let g = e; g >= 1; g--){
+        document.write(g);
+    }
+
+    for(let h = 2; h <= e; h++){
+        document.write(h);
+    }
+
+    document.write("<br>");
+}
+
+document.write("<br>");
+
+
+//     5
+//    454
+//   34543
+//  2345432
+// 123454321
+
+for(let p = 5; p >= 1; p--){
+
+    for(let q = 1; q <= p; q++){
+        document.write("&nbsp;&nbsp;");
+    }
+
+    for(let r = p; r <= 5; r++){
+        document.write(r);
+    }
+
+    for(let s = 4; s >= p; s--){
+        document.write(s);
+    }
+
+    document.write("<br>");
+}
+
+document.write("<br>");
+
+
+//     1
+//    121
+//   12321
+//  1234321
+// 123454321
+
+for(let t = 1; t <= 5; t++){
+
+    for(let u = 5; u >= t; u--){
+        document.write("&nbsp;&nbsp;");
+    }
+
+    for(let v = 1; v <= t; v++){
+        document.write(v);
+    }
+
+    for(let w = t - 1; w >= 1; w--){
+        document.write(w);
+    }
+
+    document.write("<br>");
+}
+
+document.write("<br>");
+
+
+// =====================================================
+// 8. REVERSE NUMBER PYRAMIDS
+// =====================================================
+
+document.write("<h2>8. Reverse Number Pyramid Patterns</h2>");
+
+
+// 543212345
+//  4321234
+//   32123
+//    212
+//     1
+
+for(let u = 5; u >= 1; u--){
+
+    for(let v = 5; v >= u; v--){
+        document.write("&nbsp;&nbsp;");
+    }
+
+    for(let w = u; w >= 1; w--){
+        document.write(w);
+    }
+
+    for(let x = 2; x <= u; x++){
+        document.write(x);
+    }
+
+    document.write("<br>");
+}
+
+document.write("<br>");
+
+
+// 123454321
+//  2345432
+//   34543
+//    454
+//     5
+
+for(let q = 1; q <= 5; q++){
+
+    for(let r = 1; r <= q; r++){
+        document.write("&nbsp;&nbsp;");
+    }
+
+    for(let s = q; s <= 5; s++){
+        document.write(s);
+    }
+
+    for(let t = 4; t >= q; t--){
+        document.write(t);
+    }
+
+    document.write("<br>");
+}
+
+document.write("<br>");
+
+
+// =====================================================
+// 9. CENTERED 5-TO-1 PATTERNS
+// =====================================================
+
+document.write("<h2>9. Centered 5-to-1 Patterns</h2>");
+
+
+//     5
+//    545
+//   54345
+//  5432345
+// 543212345
+
+for(let s = 5; s >= 1; s--){
+
+    for(let t = 1; t <= s; t++){
+        document.write("&nbsp;&nbsp;");
+    }
+
+    for(let u = 5; u >= s; u--){
+        document.write(u);
+    }
+
+    for(let v = s + 1; v <= 5; v++){
+        document.write(v);
+    }
+
+    document.write("<br>");
+}
+
+document.write("<br>");
+
+
+// 543212345
+//  5432345
+//   54345
+//    545
+//     5
+
+for(let f = 1; f <= 5; f++){
+
+    for(let g = 1; g <= f; g++){
+        document.write("&nbsp;&nbsp;");
+    }
+
+    for(let h = 5; h >= f; h--){
+        document.write(h);
+    }
+
+    for(let i = f + 1; i <= 5; i++){
+        document.write(i);
+    }
+
+    document.write("<br>");
+}
+
+document.write("<br>");
+
+
+// =====================================================
+// 10. CENTERED 1-TO-5 PATTERNS
+// =====================================================
+
+document.write("<h2>10. Centered 1-to-5 Patterns</h2>");
+
+
+// 123454321
+//  1234321
+//   12321
+//    121
+//     1
+
+for(let k = 5; k >= 1; k--){
+
+    for(let l = 5; l >= k; l--){
+        document.write("&nbsp;&nbsp;");
+    }
+
+    for(let m = 1; m <= k; m++){
+        document.write(m);
+    }
+
+    for(let n = k - 1; n >= 1; n--){
+        document.write(n);
+    }
+
+    document.write("<br>");
+}
+
+</script>
+
+</body>
+</html>
